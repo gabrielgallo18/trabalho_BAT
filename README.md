@@ -4,7 +4,8 @@ cls
 cls
 
 date /t
-                   
+  
+```
 echo            MENU TAREFAS
 echo  +++++++++++++++++++++++++++++++++++
 echo * 1. Esvaziar a Lixeira            * 
@@ -15,6 +16,7 @@ echo * 5. Sair                          *
 echo * 6. Versao do Sistema             * 
 echo * 7. Help                          * 
 echo  +++++++++++++++++++++++++++++++++++
+```
 
 set /p opcao= Escolha uma opcao: 
 echo ------------------------------

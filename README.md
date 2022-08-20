@@ -5,7 +5,7 @@ cls
 
 date /t
   
-## Opçoes  
+## Menu 
 echo            MENU TAREFAS
 echo  +++++++++++++++++++++++++++++++++++
 echo * 1. Esvaziar a Lixeira            * 
@@ -17,7 +17,7 @@ echo * 6. Versao do Sistema             *
 echo * 7. Help                          * 
 echo  +++++++++++++++++++++++++++++++++++
 
-
+##opcao
 set /p opcao= Escolha uma opcao: 
 echo ------------------------------
 if %opcao% equ 1 goto opcao1
@@ -28,7 +28,7 @@ if %opcao% equ 5 goto opcao5
 if %opcao% equ 6 goto opcao6
 if %opcao% equ 7 goto opcao7
 
-## Opçoes
+## Limpar a lixeira
 :opcao1
 cls
 rd /S /Q c:\$Recycle.bin
@@ -38,7 +38,7 @@ echo +++++++++++++++++++++++++++++++++++
 pause
 goto menu
 
-## Opçoes
+## Relizar um Backup
 :opcao2
 cls
 xcopy "C:\origem" "D:\destino" /e/h/s/y/d
@@ -48,7 +48,7 @@ echo +++++++++++++++++++++++++++++++++++
 pause
 goto menu
 
-## Opçoes
+## Escanear o Disco
 :opcao3
 cls
 echo +++++++++++++++++++++++++++++++++++
@@ -58,19 +58,19 @@ chkdsk c:
 pause
 goto menu
 
-## Opçoes
+## Abrir o painel de controle
 :opcao4
 cls
 control.exe
 pause
 goto menu
 
-## Opçoes
+## Sair do programa
 :opcao5
 cls
 exit
 
-## Opçoes
+## Versão do programa
 :opcao6
 echo +++++++++++++++++++++++++++++++++++++++++++++++
 echo * V.0.0.1 *
@@ -78,7 +78,7 @@ echo +++++++++++++++++++++++++++++++++++++++++++++++
 pause
 goto menu
 
-## Opçoes
+## Descrição (help)
 :opcao7
 echo +++++++++++++++++++++++++++++++++++++++++++++++
 echo * Opção 1 - Essa opcao ira realizar a limpeza da sua lixeira                  *

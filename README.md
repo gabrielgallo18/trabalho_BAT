@@ -6,6 +6,7 @@ cls
 date /t
   
 ## Menu 
+```
 echo            MENU TAREFAS
 echo  +++++++++++++++++++++++++++++++++++
 echo * 1. Esvaziar a Lixeira            * 
@@ -16,6 +17,7 @@ echo * 5. Sair                          *
 echo * 6. Versao do Sistema             * 
 echo * 7. Help                          * 
 echo  +++++++++++++++++++++++++++++++++++
+```
 
 ##opcao
 ```
